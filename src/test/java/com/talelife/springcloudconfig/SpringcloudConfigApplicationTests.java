@@ -1,4 +1,4 @@
-package com.talelife.springcloudeureka;
+package com.talelife.springcloudconfig;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class SpringcloudEurekaApplicationTests {
+public class SpringcloudConfigApplicationTests {
 
 	@Test
 	public void contextLoads() {
