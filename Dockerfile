@@ -5,4 +5,4 @@ VOLUME /tmp
 ADD springcloud-config-0.0.1-SNAPSHOT.jar springcloud-config.jar
 RUN bash -c 'touch /springcloud-config.jar'
 EXPOSE 8888
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/springcloud-config.jar"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-Xms100m","-Xmx100m","-jar","/springcloud-config.jar"]
