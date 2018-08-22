@@ -31,6 +31,8 @@ spring:
   profiles: dev
 eureka:
   instance:
+    #使用域名调用服务，设置域名，关闭ip引用
+    hostname: www.talelife.com
     prefer-ip-address: false
     lease-renewal-interval-in-seconds: 5
     lease-expiration-duration-in-seconds: 20
