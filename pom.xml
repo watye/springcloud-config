@@ -60,6 +60,7 @@
 	</dependencyManagement>
 
 	<build>
+		<finalName>springcloud-config</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
