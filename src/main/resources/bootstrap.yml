@@ -16,7 +16,7 @@ spring:
       password: Dev232512
 security:
   basic:
-    enabled: true
+    enabled: false
   user:
     name: user
     password: 123456    
