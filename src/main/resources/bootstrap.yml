@@ -38,6 +38,7 @@ eureka:
     lease-expiration-duration-in-seconds: 20
     #instance-id: www.talelife.com:${server.port}
     instance-id: config.talelife.com
+    eureka-server-port: 80
   client:
     registerWithEureka: true
     serviceUrl:
