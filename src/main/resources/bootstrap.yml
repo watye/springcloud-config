@@ -13,18 +13,12 @@ spring:
           search-paths: /**
       label: master
       username: watye@qq.com
-      password: Dev232512
-security:
-  basic:
-    enabled: false
-  user:
-    name: user
-    password: 123456    
+      password: Dev232512   
 #日志配置
 logging:
   file: springcloud-config.log
-  level.org.springframework.web: info
-  debug: false
+  level.org.springframework: info
+  debug: true
   
 ---
 spring:
@@ -33,15 +27,12 @@ eureka:
   instance:
     #使用域名调用服务，设置域名，关闭ip引用
     hostname: config.talelife.com
-    prefer-ip-address: false
-    lease-renewal-interval-in-seconds: 5
-    lease-expiration-duration-in-seconds: 20
-    #instance-id: www.talelife.com:${server.port}
-    instance-id: config.talelife.com
+    preferIpAddress: false
+    instanceId: config.talelife.com
   client:
     registerWithEureka: true
     serviceUrl:
-      defaultZone: http://eureka.talelife.com/eureka
+      defaultZone: http://admin:123456@localhost:8761/eureka
     
 ---
 spring:
