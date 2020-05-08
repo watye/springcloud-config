@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.talelife</groupId>
-	<artifactId>springcloud-config</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>springcloud-infrastructure-config</artifactId>
+	<version>v1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>springcloud-config</name>
-	<description>springcloud-config</description>
+	<name>springcloud-infrastructure-config</name>
+	<description>springcloud配置中心</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -60,7 +60,7 @@
 	</dependencyManagement>
 
 	<build>
-		<finalName>springcloud-config</finalName>
+		<finalName>springcloud-infrastructure-config</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
