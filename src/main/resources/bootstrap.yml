@@ -1,8 +1,8 @@
 server:
-  port: 8888
+  port: 35001
 spring:
   application:
-    name: springcloud-config
+    name: springcloud-infrastructure-config
   profiles:
     active: dev
   cloud:
@@ -14,26 +14,24 @@ spring:
       label: master
       username: watye@qq.com
       password: Dev232512   
-#日志配置
 logging:
-  file: springcloud-config.log
   level.org.springframework: info
-  debug: true
   
 ---
 spring:
   profiles: dev
 eureka:
   instance:
-    #使用域名调用服务，设置域名，关闭ip引用
-    hostname: config.talelife.com
-    preferIpAddress: false
-    instanceId: config.talelife.com
+    #使用域名调用服务，设置域名hostname，关闭ip引用
+    #hostname: config.talelife.com
+    hostname: localhost
+    preferIpAddress: true
+    instanceId: ${spring.cloud.client.ip-address}:${server.port}
   client:
     registerWithEureka: true
     serviceUrl:
-      defaultZone: http://admin:123456@localhost:8761/eureka
+      defaultZone: http://admin:123456@localhost:35000/eureka
     
 ---
 spring:
-  profiles: prod
+  profiles: prd
