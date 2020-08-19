@@ -22,7 +22,7 @@ spring:
   profiles: dev
 eureka:
   instance:
-    #使用域名调用服务，设置域名hostname，关闭ip引用
+    #提供使用域名被调用方调用服务，设置域名hostname，关闭ip引用，被调用方通过这里设置的hostname来调用
     #hostname: config.talelife.com
     hostname: localhost
     preferIpAddress: true
